@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:tn="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>User List</title>
+</head>
+<body>
+<div tn:insert="{fragments/menu :: #nav-menu}"></div>
+<table border="1">
+    <tr>
+        <td>Name</td>
+        <td>Email</td>
+    </tr>
+    <tr tn:each="user : ${users}">
+        <td tn:text="${user.username}">Testname</td>
+        <td tn:text="{user.email}">Testemail</td>
+    </tr>
+</table>
+<a tn:href="@{/users/new}">Add new</a>
+</body>
+</html>
