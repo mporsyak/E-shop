@@ -26,7 +26,7 @@ public class User {
     private boolean archive;
     @Enumerated(EnumType.STRING)
     private Role role;
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private Bucket backed;
 
 }

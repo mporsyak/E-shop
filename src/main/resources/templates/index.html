@@ -6,7 +6,9 @@
 </head>
 <body>
 <!--<header th:insert="fragments/menu.html :: naw-menu"></header>-->
-<!--<div th:insert="${fragments/menu :: #naw-menu}"></div>-->
-<div th:></div>
+<div><a th:insert="${fragments/menu :: #naw-menu}"></a></div>
+<h2>Amount clicks --><b th:href="${amountClicks}">10</b> </h2>
+<h2>your uuid -><a th:text="${uuid}">10</a></h2>
+<div th></div>
 </body>
 </html>

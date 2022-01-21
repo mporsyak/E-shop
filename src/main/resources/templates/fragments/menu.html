@@ -14,7 +14,7 @@
                     <td><a th:href="@{/}">Home</a></td>
                     <td><a th:href="@{/products}">Products</a>
                     <td sec:authentic="hasAuthenticated('ADMIN', 'MANAGER)"><a th href="@{/users}">Users</a> </td>
-
+                    <td sec:authentic="isAuthenticated()"><a th:href="@{/bucket}"></ath:href></a></td>
                 </tr>
             </table>
         </td>

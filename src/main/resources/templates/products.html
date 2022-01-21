@@ -14,7 +14,7 @@
     </tr>
     <tr th:each="user : ${products}">
         <td th:text="${product.title}">Car</td>
-        <td th:text="{product.price">12.8</td>
+        <td th:text="${product.price">12.8</td>
         <td><a th:href="@{products/{id}/bucket[{id=S{product.id}}]">Add to bucket</a></td>
     </tr>
 </table>
